@@ -10,7 +10,7 @@
   For business & inquires, contact me -> jacobojavier98@gmail.com
 -->
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,10 +30,6 @@
     />
     <link rel="stylesheet" href="styles.scss" />
     <link rel="stylesheet" href="index.css">
-    <script
-      defer
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-    ></script>
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -46,14 +42,14 @@
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title load-hidden">
+        <h1 class="hero-title">
           Hi, my name is <span class="text-color-main">Deon Victor Lobo</span>
           <br />
           I'm the Developer You Need.
         </h1>
-        <p class="hero-cta load-hidden">
+        <p class="hero-cta">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Some of my Projects</a>
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects">Some of my Projects</a>
           <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/deonlobo/Certificates-Awarded/blob/master/README.md">Certificates Achieved</a>
           <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://www.linkedin.com/in/deonlobo/t">Linkdin</a>
           <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/deonlobo" >GitHub</a>
@@ -65,10 +61,10 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 class="section-title">About me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
+            <div class="about-wrapper__image">
               <img
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
@@ -80,7 +76,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
+            <div class="about-wrapper__info">
               <p class="about-wrapper__info-text" style="text-align:justify; text-justify:inter-word;"> 
                   Currently pursuing my Master's in Applied Computing at the University of Windsor, Canada. 
                   I hold a Bachelor's degree in Computer Science from NMAM Institute of Technology with a stellar CGPA of 9.25/10.
@@ -121,7 +117,7 @@
           <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
+              <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Project Title 0</h3>
                 <div>
                   <p class="mb-4">
@@ -149,15 +145,9 @@
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
+              <div class="project-wrapper__image">
                 <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
+                  <div>
                     <img
                       alt="Project Image"
                       class="img-fluid"
@@ -170,108 +160,100 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
-                <div>
-                  <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+          <div class="workproject"> <!-- work project -->         
+            <!-- Notice: each .row is a project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                  <div>
+                    <p class="mb-4">
+                      Demonstrate in this description the skills of a programmer: such as having commitment, 
+                      having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
+                      you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    </p>
                   </div>
-                </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="#!"
+                  >
+                    See Live
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="#!"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image">
+                  <a rel="noreferrer" href="#!" target="_blank">
+                    <div>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/project.jpg"
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- /END Project -->
+            <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+            <!-- Notice: each .row is a project -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                  <div>
+                    <p class="mb-4">
+                      If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
+                      Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    </p>
                   </div>
-                </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="#!"
+                  >
+                    See Live
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="#!"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__image">
+                  <a rel="noreferrer" href="#!" target="_blank">
+                    <div>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/project.jpg"
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
+            <!-- /END Project -->
           </div>
-          <!-- /END Project -->
+          <h3><b><button id='workproject_btn' onclick="myFunction('workproject','workproject_btn')" class="cta-btn cta-btn--hero">Show More</button></b></h3>
+
         </div>
       </div>
     </section>
@@ -281,7 +263,7 @@
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
+        <div class="contact-wrapper">
           <p class="contact-wrapper__text">[Put your call to action here]</p>
           <a
             rel="noreferrer"
@@ -350,6 +332,32 @@
     </footer>
     <!-- /END Footer Section -->
 
-    <script defer type="module" src="index.js"></script>
+    <script>
+    window.onload = function() {
+        var x1 = document.getElementsByClassName("android");
+        var x2 = document.getElementsByClassName("web");
+        var x3 = document.getElementsByClassName("datascience");
+        var x4 = document.getElementsByClassName("workproject");
+        x1[0].style.display = "none";
+        x2[0].style.display = "none";
+        x3[0].style.display = "none";
+        x4[0].style.display = "none";
+
+    };
+  function myFunction(catagory,b) {
+
+    var x = document.getElementsByClassName(catagory);
+    btn = document.getElementById(b);
+    /*x[0].style.display = "none";*/
+    if (x[0].style.display === "none") {
+      btn.innerHTML = 'Show Less';
+      x[0].style.display = "block";
+    } else {
+      btn.innerHTML = 'Show More';
+      x[0].style.display = "none";
+    }
+  }
+  </script>
   </body>
+  
 </html>
