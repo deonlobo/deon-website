@@ -19,6 +19,10 @@
     }
 }
 
+.project-wrapper{
+    margin-bottom: 0px !important;
+}
+
 /* Default styling for larger screens */
 .container {
     padding-right: 5%;
