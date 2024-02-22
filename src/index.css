@@ -24,3 +24,14 @@
     padding-right: 5%;
     padding-left: 5%;
 }
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .hide {
+        display: none !important;
+    }
+}
+
+.justify-text{
+    text-align:justify !important; 
+}
