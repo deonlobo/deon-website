@@ -39,3 +39,7 @@
 .justify-text{
     text-align:justify !important; 
 }
+
+.padding-r-x{
+    padding-right: 15px;
+}
