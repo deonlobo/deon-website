@@ -1,5 +1,5 @@
 # This is my personal portfolio website : https://deonlobo.netlify.app/
-Here I have posted some of my best projects , feel free to check out. 
+Here I have posted some of my best projects , feel free to check out.  
 
 <h2 align="center">
   <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
