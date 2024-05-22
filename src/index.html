@@ -397,30 +397,30 @@
     
     <hr>
 
-    <!-- **** Web Scrapping Section **** -->
+    <!-- **** Unix Programmig **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Web Scrapping</h2>
+          <h2 class="section-title dark-blue-text">Unix Programmig</h2>
 
-          <!-- Salary Stratos -->
+          <!-- Distributed File Retrieval System -->
           <div class="row">
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__text justify-text padding-r-x">
-                <h3 class="project-wrapper__text-title">Salary Stratos</h3>
+                <h3 class="project-wrapper__text-title">Distributed File Retrieval System - (Socket Programming)</h3>
                 <div>
                   <ul class="mb-4">
-                    <li><p>This project optimizes job scraping through efficient HTML parsing with Jsoup and enhances word retrieval using inverted indexing with Trie Data Structure. It aims to uncover the highest-paying jobs and rank results for enhanced user-friendly job market exploration.</p></li>
-                    <li><p>Inverted Indexing for Efficient Retrieval: The Trie Data Structure serves as the backbone for inverted indexing, providing efficient storage and retrieval of words from job descriptions. TrieNodes storing job IDs enable swift identification of jobs containing specific terms, optimizing search functionalities.</p></li> 
-                    <li><p>Word Frequency Analysis: TrieNode coupled with TreeMap(wordFrequency) facilitates the systematic counting of word occurrences in job descriptions.</p></li>
-                    <li><p>Dynamic Search Frequency Monitoring: Utilizing LRUCache, the system tracks and updates search term frequencies. Paired with a SortedArray, it offers a concise and sorted view of recent search activities, providing insights into user search patterns.</p></li>
+                    <li><p>Clients connect to a server to request files, and the server responds by searching for files and returning them or an appropriate message. The response includes a compressed tar archive containing all files found based on the client's command.</p></li>
+                    <li><p>The server (serverw24) runs alongside two mirrors (mirror1 and mirror2), forks a child process to handle each client request, and uses a `crequest()` function to process client commands. The server exits upon receiving the `quitc` command.</p></li>
+                    <li><p>The client (clientw24) operates in an infinite loop, waiting for user commands, verifies command syntax before sending them to the server, and supports various commands such as `dirlist`, `w24fn`, `w24fz`, `w24ft`, `w24fdb`, `w24fda`, and `quitc`.</p></li>
+                    <li><p>To ensure load balancing, initial client connections are handled by serverw24, with subsequent connections alternating between serverw24, mirror1, and mirror2.</p></li>
                   </ul>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://github.com/deonlobo/SalaryStratos"
+                  href="https://github.com/deonlobo/file-retrieval-system-sockets"
                 >
                   Source Code
                 </a>
@@ -428,39 +428,39 @@
             </div>
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__image">
-                <a rel="noreferrer" href="https://github.com/deonlobo/SalaryStratos" target="_blank">
+                <a rel="noreferrer" href="https://github.com/deonlobo/file-retrieval-system-sockets" target="_blank">
                   <div>
                     <img
                       alt="Project Image"
                       class="img-fluid rounded shadow-lg"
-                      src="assets/salaryStratos.png"
+                      src="assets/file_system.png"
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Salary Stratos -->
+          <!-- /END Distributed File Retrieval System -->
 
-          <div class="webscrape"> <!-- web scrape --> 
-            <!-- Garden Scrapper -->
+          <div class="unixprogramming"> <!-- unixprogramming --> 
+            <!-- Mini Shell Lite -->
             <div class="row">
               <div class="col-lg-8 col-sm-12">
                 <div class="project-wrapper__text justify-text padding-r-x">
-                  <h3 class="project-wrapper__text-title">Garden Scrapper</h3>
+                  <h3 class="project-wrapper__text-title">Mini Shell Lite</h3>
                   <div>
                     <ul class="mb-4">
-                      <li><p>Automated Extraction: This Java program efficiently uses Selenium WebDriver to gather plant information from Better Homes & Gardens. By initiating a ChromeDriver and navigating through the site, it dynamically collects 378 plant names and links, streamlining data extraction for analysis.</p></li>
-                      <li><p>Table Data Extraction: Using advanced Selenium commands, the program targets specific table information by searching for identifiers like "Genus Name" and extracting associated values such as "Arctotis." </p></li> 
-                      <li><p>Paragraph Retrieval: Leveraging Selenium, the program extracts data from paragraphs by locating headings like "Soil and Water" and retrieving subsequent paragraphs with the "following-sibling::p" command. </p></li>
-                      <li><p>Facebook Sharing Automation: Utilizing Selenium's capabilities, the program automates sharing a specific plant entry, Baby's Breath, on Facebook. </p></li>
+                      <li><p>Background execution allows running commands with `&`, and foreground execution uses the `fg` command to bring background processes to the foreground.</p></li>
+                      <li><p>The shell supports opening new instances within the current shell using the `newt` command and concatenating text files into a single output file with the `cat <file1> # <file2> # ...` syntax.</p></li>
+                      <li><p>Pipe operations and redirection are supported, enabling the output of one command to serve as input to another with `|`, and redirecting standard input/output using `>`, `>>`, and `<` operators.</p></li>
+                      <li><p>Conditional execution with `&&` and `||`, sequential execution with `;`, and signal handling for terminating background processes with Ctrl+C (SIGINT) are also featured.</p></li>
                     </ul>
                   </div>
                   <a
                     rel="noreferrer"
                     target="_blank"
                     class="cta-btn cta-btn--hero"
-                    href="https://github.com/deonlobo/GardenScraper"
+                    href="https://github.com/deonlobo/mini-shell-lite"
                   >
                     Source Code
                   </a>
@@ -468,21 +468,60 @@
               </div>
               <div class="col-lg-4 col-sm-12">
                 <div class="project-wrapper__image">
-                  <a rel="noreferrer" href="https://github.com/deonlobo/GardenScraper" target="_blank">
+                  <a rel="noreferrer" href="https://github.com/deonlobo/mini-shell-lite" target="_blank">
                     <div>
                       <img
                         alt="Project Image"
                         class="img-fluid rounded shadow-lg"
-                        src="assets/gardenscrapper.png"
+                        src="assets/minishell.png"
                       />
                     </div>
                   </a>
                 </div>
               </div>
             </div>
-            <!-- /END Garden Scrapper -->
+            <!-- /END Mini Shell Lite -->
+
+            <!-- Auto Backup Pro -->
+            <div class="row">
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__text justify-text padding-r-x">
+                  <h3 class="project-wrapper__text-title">Auto Backup Pro</h3>
+                  <div>
+                    <ul class="mb-4">
+                      <li><p>Comprehensive Backup Strategy: AutoBackupPro offers complete, incremental, and differential backups of files within the /home/username directory, ensuring all changes are regularly saved.</p></li>
+                      <li><p>Automated Backup Process: The script runs continuously in the background, performing backups at specified intervals without requiring manual intervention.</p></li>
+                      <li><p>Backup Naming Convention: Backup files are named systematically, distinguishing between complete, incremental, and differential backups, and are appended with a sequence number for tracking purposes.</p></li>
+                      <li><p>Detailed Logging: AutoBackupPro maintains a log file (backup.log) with timestamps and filenames of created backup files, providing a record of backup activities for monitoring and troubleshooting purposes.</p></li>
+                    </ul>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://github.com/deonlobo/auto-backup-pro"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__image">
+                  <a rel="noreferrer" href="https://github.com/deonlobo/auto-backup-pro" target="_blank">
+                    <div>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid rounded shadow-lg"
+                        src="assets/autobackup.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Auto Backup Pro -->
           </div>
-          <h3><b><button id='webscrape_btn' onclick="myFunction('webscrape','webscrape_btn')" class="cta-btn cta-btn--hero">Show More</button></b></h3>
+          <h3><b><button id='unixprogramming_btn' onclick="myFunction('unixprogramming','unixprogramming_btn')" class="cta-btn cta-btn--hero">Show More</button></b></h3>
         </div>
       </div>
     </section>
@@ -624,6 +663,100 @@
       </div>
     </section>
     <!-- **** END Data Science Section **** -->
+
+    <hr>
+
+    <!-- **** Web Scrapping Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Web Scrapping</h2>
+
+          <!-- Salary Stratos -->
+          <div class="row">
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__text justify-text padding-r-x">
+                <h3 class="project-wrapper__text-title">Salary Stratos</h3>
+                <div>
+                  <ul class="mb-4">
+                    <li><p>This project optimizes job scraping through efficient HTML parsing with Jsoup and enhances word retrieval using inverted indexing with Trie Data Structure. It aims to uncover the highest-paying jobs and rank results for enhanced user-friendly job market exploration.</p></li>
+                    <li><p>Inverted Indexing for Efficient Retrieval: The Trie Data Structure serves as the backbone for inverted indexing, providing efficient storage and retrieval of words from job descriptions. TrieNodes storing job IDs enable swift identification of jobs containing specific terms, optimizing search functionalities.</p></li> 
+                    <li><p>Word Frequency Analysis: TrieNode coupled with TreeMap(wordFrequency) facilitates the systematic counting of word occurrences in job descriptions.</p></li>
+                    <li><p>Dynamic Search Frequency Monitoring: Utilizing LRUCache, the system tracks and updates search term frequencies. Paired with a SortedArray, it offers a concise and sorted view of recent search activities, providing insights into user search patterns.</p></li>
+                  </ul>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/deonlobo/SalaryStratos"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://github.com/deonlobo/SalaryStratos" target="_blank">
+                  <div>
+                    <img
+                      alt="Project Image"
+                      class="img-fluid rounded shadow-lg"
+                      src="assets/salaryStratos.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Salary Stratos -->
+
+          <div class="webscrape"> <!-- web scrape --> 
+            <!-- Garden Scrapper -->
+            <div class="row">
+              <div class="col-lg-8 col-sm-12">
+                <div class="project-wrapper__text justify-text padding-r-x">
+                  <h3 class="project-wrapper__text-title">Garden Scrapper</h3>
+                  <div>
+                    <ul class="mb-4">
+                      <li><p>Automated Extraction: This Java program efficiently uses Selenium WebDriver to gather plant information from Better Homes & Gardens. By initiating a ChromeDriver and navigating through the site, it dynamically collects 378 plant names and links, streamlining data extraction for analysis.</p></li>
+                      <li><p>Table Data Extraction: Using advanced Selenium commands, the program targets specific table information by searching for identifiers like "Genus Name" and extracting associated values such as "Arctotis." </p></li> 
+                      <li><p>Paragraph Retrieval: Leveraging Selenium, the program extracts data from paragraphs by locating headings like "Soil and Water" and retrieving subsequent paragraphs with the "following-sibling::p" command. </p></li>
+                      <li><p>Facebook Sharing Automation: Utilizing Selenium's capabilities, the program automates sharing a specific plant entry, Baby's Breath, on Facebook. </p></li>
+                    </ul>
+                  </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://github.com/deonlobo/GardenScraper"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="project-wrapper__image">
+                  <a rel="noreferrer" href="https://github.com/deonlobo/GardenScraper" target="_blank">
+                    <div>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid rounded shadow-lg"
+                        src="assets/gardenscrapper.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END Garden Scrapper -->
+          </div>
+          <h3><b><button id='webscrape_btn' onclick="myFunction('webscrape','webscrape_btn')" class="cta-btn cta-btn--hero">Show More</button></b></h3>
+        </div>
+      </div>
+    </section>
+    <!-- **** END Web Scrapping Section **** -->
+
 
     <hr>
 
@@ -1081,14 +1214,15 @@
     <script>
     window.onload = function() {
         var x1 = document.getElementsByClassName("workproject");
-        var x2 = document.getElementsByClassName("webscrape");
+        var x2 = document.getElementsByClassName("unixprogramming");
         var x3 = document.getElementsByClassName("datascience");
-        var x4 = document.getElementsByClassName("android");
+        var x4 = document.getElementsByClassName("webscrape");
+        var x5 = document.getElementsByClassName("android");
         x1[0].style.display = "none";
         x2[0].style.display = "none";
         x3[0].style.display = "none";
         x4[0].style.display = "none";
-
+        x5[0].style.display = "none";
     };
   function myFunction(catagory,b) {
 
